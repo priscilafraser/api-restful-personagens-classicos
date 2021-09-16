@@ -54,9 +54,13 @@ const update = async (req, res) => {
   const { nome, identidade, genero, imagem } = req.body;
 
   if (!nome || !identidade || !genero || !imagem) {
-    return res.status(400).send({message: "Você n]ao enviou todos os dados necessários para o cadastro"});
+    return res
+      .status(400)
+      .send({
+        message: "Você n]ao enviou todos os dados necessários para o cadastro",
+      });
     return;
-  };
+  }
 
   res.personagem.nome = nome;
   res.personagem.identidade = identidade;
@@ -71,23 +75,19 @@ const update = async (req, res) => {
   }
 };
 
-
 const del = async (req, res) => {
-    try {
-      await res.personagem.remove();
-      return res.send({ message: "Personagem removido com sucesso" });
-    } catch (err) {
-      res.status(500).send({ error: err });
-    }
-  };
-
-
-
+  try {
+    await res.personagem.remove();
+    return res.send({ message: "Personagem removido com sucesso" });
+  } catch (err) {
+    res.status(500).send({ error: err });
+  }
+};
 
 module.exports = {
   getAll,
   getById,
   create,
   update,
-  del
+  del,
 };
