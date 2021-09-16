@@ -2,7 +2,9 @@
 
 ![Logo personagens clássicos](https://segredosdomundo.r7.com/wp-content/uploads/2020/03/desenhos-antigos-mais-de-100-desenhos-que-te-farao-voltar-a-infancia-11.jpg)
 
+
 >API criada para estudar conceitos de back-end, utilizando a linguagem de programação JavaScript e o banco de dados MongoDB. Nessa API eu crio um CRUD completo com personagens clássicos que tem mais de 50 anos.
+
 
 Desenhos animados são atemporais, mesmo os mais antigos, mas ainda continuam sendo exibidos em algum canal. Eles nos trazem boas lembranças, de uma época com mais diversão e com menos preocupações e são uma espécie de calmante para o stress do dia a dia.
 
@@ -24,7 +26,7 @@ Você pode utilizar algumas ferramentas para teste, porém durante a construçã
 
 Exemplos de URLs:
 * Essa é a URL de teste padrão: http://localhost:3000/personagens
-* Para buscar por ID, Editar ou Apagar, insira o ID na URL: http://localhost:3000/airplanes/ID
+* Para buscar por ID, Editar ou Apagar, insira o ID na URL: http://localhost:3000/personagens/ID
 * Para fazer uma busca com query string, esse é um exemplo de URL: http://localhost:3000/personagens/filter?velocidademax=875
 
 Essa é a estrutura JSON para fazer o POST e o PUT:
