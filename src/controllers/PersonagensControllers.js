@@ -12,7 +12,7 @@ const getAll = async (req, res) => {
 const getById = async (req, res) => {
   const { id } = req.params;
   try {
-    const personagens = await Personagem.findById(id);
+    const personagem = await Personagem.findById(id);
     if (!personagem) {
       res.status(404).send({ message: "Personagem não encontrado" });
       return;
@@ -24,9 +24,9 @@ const getById = async (req, res) => {
 };
 
 const create = async (req, res) => {
-  const { nome, identidade, genero, imagem } = req.body;
+  const { nome, primeira_aparicao, bordao, criadores, imagem } = req.body;
 
-  if (!nome || !identidade || !genero || !imagem) {
+  if (!nome || !primeira_aparicao || !bordao || !criadores || !imagem) {
     return res.status(400).send({
       message: "Você n]ao enviou todos os dados necessários para o cadastro",
     });
@@ -35,8 +35,9 @@ const create = async (req, res) => {
 
   const novoPersonagem = await new Personagem({
     nome,
-    identidade,
-    genero,
+    primeira_aparicao,
+    bordao,
+    criadores,
     imagem,
   });
 
@@ -51,9 +52,9 @@ const create = async (req, res) => {
 };
 
 const update = async (req, res) => {
-  const { nome, identidade, genero, imagem } = req.body;
+  const { nome, primeira_aparicao, bordao, criadores, imagem } = req.body;
 
-  if (!nome || !identidade || !genero || !imagem) {
+  if (!nome || !primeira_aparicao || !bordao || !criadores || !imagem) {
     return res
       .status(400)
       .send({
@@ -63,8 +64,9 @@ const update = async (req, res) => {
   }
 
   res.personagem.nome = nome;
-  res.personagem.identidade = identidade;
-  res.personagem.genero = genero;
+  res.personagem.primeira_aparicao = primeira_aparicao;
+  res.personagem.bordao = bordao;
+  res.personagem.criadores = criadores;
   res.personagem.imagem = imagem;
 
   try {

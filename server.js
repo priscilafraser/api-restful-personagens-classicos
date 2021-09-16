@@ -1,11 +1,10 @@
 require("dotenv").config();
 const express = require("express");
-const { connect } = require("mongoose");
+const {connect} = require("mongoose");
 
 const connectToDb = require("./src/database/database");
 
 const routes = require("./src/routers/routes");
-
 
 
 connectToDb();
@@ -22,3 +21,5 @@ app.use(routes);
 app.listen(port, () => {
     console.log(`App rodando em http://localhost:${port}`);
   });
+
+  //DATABASE_URI = "mongodb://localhost:27017/db"

@@ -5,11 +5,15 @@ const personagemSchema = new mongoose.Schema({
     type: String,
     require: true,
   },
-  identidade: {
+  primeira_aparicao: {
+    type: Number,
+    require: true,
+  },
+  bordao: {
     type: String,
     require: true,
   },
-  genero: {
+  criadores: {
     type: String,
     require: true,
   },

@@ -1,0 +1,23 @@
+[
+  {
+    "nome": "Mickey Mouse",
+    "primeira_aparicao": 1928,
+    "bordao": "Rir de si mesmo é amar a si mesmo",
+    "criadores": "Walt Disney, Ub Iwerks",
+    "imagem": "https://i2.wp.com/arteref.com/wp-content/uploads/2019/04/Mickey-Mouse.jpg?w=700&ssl=1"
+  },
+  {
+    "nome": "Perna Longa",
+    "primeira_aparicao": 1940,
+    "bordao": "Eh… o que é que há, velhinho?",
+    "criadores": "Ben Hardaway, Tex Avery, Chuck Jones, Robert McKimson, Bob Clampett, Bob Givens",
+    "imagem": "https://i0.wp.com/arteref.com/wp-content/uploads/2019/04/Bugs-Bunny.jpg?w=700&ssl=1"
+  },
+  {
+    "nome": "Charlie Brown",
+    "primeira_aparicao": 1948,
+    "origem": "Que puxa!",
+    "criadores": "Charles M. Schulz",
+    "imagem": "https://vejasp.abril.com.br/wp-content/uploads/2017/05/minduim.jpg?resize=650,371"
+  }
+]
