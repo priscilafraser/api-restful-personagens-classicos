@@ -1,0 +1,27 @@
+{
+  "name": "api-restfull",
+  "version": "1.0.0",
+  "description": ">",
+  "main": "server.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priscilafraser/api-restfull.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/priscilafraser/api-restfull/issues"
+  },
+  "homepage": "https://github.com/priscilafraser/api-restfull#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
