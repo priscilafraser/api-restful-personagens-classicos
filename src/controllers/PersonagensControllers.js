@@ -55,11 +55,9 @@ const update = async (req, res) => {
   const { nome, primeira_aparicao, bordao, criadores, imagem } = req.body;
 
   if (!nome || !primeira_aparicao || !bordao || !criadores || !imagem) {
-    return res
-      .status(400)
-      .send({
-        message: "Você n]ao enviou todos os dados necessários para o cadastro",
-      });
+    return res.status(400).send({
+      message: "Você n]ao enviou todos os dados necessários para o cadastro",
+    });
     return;
   }
 
@@ -86,10 +84,27 @@ const del = async (req, res) => {
   }
 };
 
+const filterByName = async (req, res) => {
+  const nome = req.query.nome;
+  console.log(nome);
+
+  if (!nome) {
+    res.status(400).send({ error: "Parâmetro não recebido" });
+  }
+
+  try {
+    const personagens = await Personagem.find({ "nome": {'$regex': `${nome}`} });
+    return res.send({ personagens });
+  } catch (err) {
+    return res.status(500).send({ error: err.message });
+  }
+};
+
 module.exports = {
   getAll,
   getById,
   create,
   update,
   del,
+  filterByName,
 };
