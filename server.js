@@ -9,7 +9,8 @@ connectToDb();
 
 const app = express();
 app.use(express.json());
-const port = 3000;
+const dbAtlas = process.env.DATABASE_ATLAS;
+const port = process.env.PORT || 3000;
 
 // CORS
 app.use(cors());
