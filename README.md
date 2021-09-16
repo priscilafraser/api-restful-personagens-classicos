@@ -1,4 +1,4 @@
-# API RestFull - NodeJs
+# API RestFul - Personagens Clássicos
 
 ![Logo personagens clássicos](https://segredosdomundo.r7.com/wp-content/uploads/2020/03/desenhos-antigos-mais-de-100-desenhos-que-te-farao-voltar-a-infancia-11.jpg)
 

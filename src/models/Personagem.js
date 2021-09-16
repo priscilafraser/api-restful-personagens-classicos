@@ -4,27 +4,22 @@ const personagemSchema = new mongoose.Schema({
   nome: {
     type: String,
     require: true,
-    lowercase: true
   },
   primeira_aparicao: {
-    type: Number,
+    type: String,
     require: true,
-    lowercase: true
   },
   bordao: {
     type: String,
     require: true,
-    lowercase: true
   },
   criadores: {
     type: String,
     require: true,
-    lowercase: true
   },
   imagem: {
     type: String,
     require: true,
-    lowercase: true
   },
 });
 
