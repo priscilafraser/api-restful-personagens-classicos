@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 
-const dbAtlas = process.env.DATABASE_ATLAS;
 const connectToDb = () => {
   mongoose.connect(process.env.DATABASE_ATLAS, {
     useNewUrlParser: true,
