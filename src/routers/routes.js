@@ -1,8 +1,6 @@
 const express = require("express");
 const routes = express.Router();
 
-//const routes = require("express").Router();
-
 const PersonagemController = require("../controllers/PersonagensControllers");
 const PersonagemMiddleware = require("../middlewares/PersonagensMiddlewares");
 
