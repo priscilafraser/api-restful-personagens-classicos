@@ -3,7 +3,7 @@ const express = require("express");
 const { connect } = require("mongoose");
 const connectToDb = require("./src/database/database");
 const routes = require("./src/routers/routes");
-var cors = require("cors");
+let cors = require("cors");
 
 connectToDb();
 
