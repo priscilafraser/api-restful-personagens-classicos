@@ -30,7 +30,7 @@ const create = async (req, res) => {
     return res.status(400).send({
       message: "Você n]ao enviou todos os dados necessários para o cadastro",
     });
-    return;
+    return res.status(200).send({ message: "Sucesso!"});
   }
 
   const novoPersonagem = await new Personagem({
@@ -58,7 +58,7 @@ const update = async (req, res) => {
     return res.status(400).send({
       message: "Você n]ao enviou todos os dados necessários para o cadastro",
     });
-    return;
+    return return res.status(200).send({ message: "Sucesso!" });
   }
 
   res.personagem.nome = nome;
